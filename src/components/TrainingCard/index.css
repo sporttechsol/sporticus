@@ -1,0 +1,52 @@
+.card_container {
+  width: 90%;
+}
+
+.userlogo_contaner {
+}
+.userlogo_contaner img {
+  width: 100%;
+}
+
+.info_container {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  cursor: pointer;
+}
+
+.info_container img {
+  width: 20px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.card_reaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card_reaction img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.arrow_back {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.arrow_back:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.arrow_back img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}

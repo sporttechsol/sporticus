@@ -1,0 +1,9 @@
+.workouts-list {
+  height: 100vh;
+}
+
+.workout-list-wrapper {
+  height: calc(100% - 20px);
+  padding: 10px;
+  overflow: auto;
+}

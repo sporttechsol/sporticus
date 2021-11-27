@@ -1,0 +1,42 @@
+.workouts-item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 5px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.workouts-item:first-child {
+  margin-top: 0;
+}
+
+.workouts-item__main-img {
+  width: 50px;
+  height: 50px;
+}
+
+.workouts-item__content {
+  flex-grow: 1;
+  padding: 0 5px 0 10px;
+}
+
+.workouts-item__main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.workouts-item__distance-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.workouts-item__title {
+  font-weight: 600;
+}
