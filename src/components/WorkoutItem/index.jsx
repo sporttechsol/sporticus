@@ -1,4 +1,5 @@
 import {getDistanceFromCoords} from '../../helpers/getDistanceFromCoords';
+import moment from 'moment';
 
 import './index.css';
 
@@ -15,6 +16,7 @@ const WorkoutItem = ({
   setCurrentCard,
   userLatitude,
   userLongitude,
+  date,
 }) => {
   const distance = Math.round(getDistanceFromCoords(userLatitude, userLongitude, latitude, longitude) * 10) / 10;
 
@@ -33,6 +35,10 @@ const WorkoutItem = ({
         <div className='workouts-item__distance-info'>
           <div className='workouts-item__address'>{address}</div>
           <div className='workouts-item__distance'>{distance}km</div>
+        </div>
+        <div className='workouts-item__distance-info'>
+          <div className='workouts-item__date'>{moment(date).format('MM/DD')}</div>
+          <div className='workouts-item__time'>{moment(date).format('HH:MM')}</div>
         </div>
       </div>
     </div>
