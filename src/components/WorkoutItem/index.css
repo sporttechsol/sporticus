@@ -1,11 +1,7 @@
 .workouts-item {
   display: flex;
   flex-direction: row;
-  padding: 5px 5px;
-  border: 1px solid black;
-  border-radius: 4px;
-  margin-top: 5px;
-  height: 76px;
+  padding-top: 10px;
   cursor: pointer;
 }
 
@@ -18,13 +14,15 @@
   height: 50px;
   margin-top: 7px;
   margin-left: 2px;
-  border-radius: 50%;
+  border-radius: 2px;
   object-fit: cover;
 }
 
 .workouts-item__content {
   flex-grow: 1;
-  padding: 0 5px 0 10px;
+  margin-left: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #60686c;
 }
 
 .workouts-item__main-info {
