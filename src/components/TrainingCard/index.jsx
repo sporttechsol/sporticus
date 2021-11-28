@@ -88,7 +88,7 @@ const Card = ({
           <div className='card_reaction'>
             {isAssigned ? (
               <button className='leave_button card_reaction__button' onClick={leaveTraining}>
-                I dont want
+                Cancel Workout
                 <svg
                   className='confirm_button__icon'
                   width='20'
