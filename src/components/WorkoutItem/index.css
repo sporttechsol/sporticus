@@ -18,6 +18,8 @@
   height: 50px;
   margin-top: 7px;
   margin-left: 2px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .workouts-item__content {

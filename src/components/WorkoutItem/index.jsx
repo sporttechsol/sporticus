@@ -1,4 +1,3 @@
-import {getDistanceFromCoords} from '../../helpers/getDistanceFromCoords';
 import moment from 'moment';
 
 import './index.css';
@@ -8,24 +7,20 @@ const WorkoutItem = ({
   title,
   tutor,
   imgUrl,
-  longitude,
-  latitude,
+  distance,
   description,
   instUrl,
   address,
   setCurrentCard,
-  userLatitude,
-  userLongitude,
   date,
 }) => {
-  const distance = Math.round(getDistanceFromCoords(userLatitude, userLongitude, latitude, longitude) * 10) / 10;
-
   return (
     <div
       className='workouts-item'
       onClick={() => {
-        setCurrentCard({id, title, tutor, imgUrl, distance, description, instUrl, address});
-      }}>
+        setCurrentCard({ id, title, tutor, imgUrl, distance, description, instUrl, address });
+      }}
+    >
       <img className='workouts-item__main-img' src={imgUrl} alt='img' />
       <div className='workouts-item__content'>
         <div className='workouts-item__main-info'>
