@@ -1,6 +1,6 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
-import workoutsList from './workoutsListMock';
+import WORKOUTS_LIST from './workoutsListMock';
 import WorkoutItem from '../WorkoutItem';
 import Header from '../Header';
 import TrainingCard from '../TrainingCard';
@@ -17,18 +17,23 @@ const WorkoutsList = () => {
   const [searchString, setSearchString] = useState('');
   const [currentCard, setCurrentCard] = useState(null);
   const [isTutorProfileOpened, setIsTutorProfileOpened] = useState(false);
-  const openTutorProfile = () => {
-    setIsTutorProfileOpened(!isTutorProfileOpened);
-  };
-
+  
+  const openTutorProfile = () => { setIsTutorProfileOpened(!isTutorProfileOpened); };
   const distance = (lat1, lon1, lat2, lon2) => Math.round(getDistanceFromCoords(lat1, lon1, lat2, lon2) * 10) / 10;
-
-  const mappedWorkoutList = workoutsList.map((w) => ({
+  const enrichWorkouts = (originalList) => [...originalList].map((w) => ({
     ...w,
     distance: distance(w.latitude, w.longitude, latitude, longitude),
-  }));
-  // const sortedWorkoutList = [...mappedWorkoutList]
-  //   .sort((a, b) => a.distance > b.distance);
+  })).sort((a, b) => a.distance > b.distance);
+
+  const originalWorkoutList = enrichWorkouts(WORKOUTS_LIST);
+  const [workoutList, setWorkoutList] = useState(originalWorkoutList);
+
+  useEffect(() => {
+    const query = searchString.toLowerCase();
+    setWorkoutList(originalWorkoutList
+      .filter((w) => w.distance < searchDistance)
+      .filter((w) => searchString?.length ? w.title.toLowerCase().includes(query) : true));
+  }, [searchDistance, searchString])
 
   return (
     <>
@@ -56,7 +61,7 @@ const WorkoutsList = () => {
             setSearchString={setSearchString}
           />
           <div className='workout-list-wrapper'>
-            {mappedWorkoutList.map((item) => (
+            {workoutList.map((item) => (
               <WorkoutItem
                 key={item.id}
                 {...item}
