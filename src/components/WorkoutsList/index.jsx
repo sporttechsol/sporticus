@@ -1,16 +1,11 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 import workoutsList from './workoutsListMock';
 import WorkoutItem from '../WorkoutItem';
 import Header from '../Header';
 import TrainingCard from '../TrainingCard';
-import {
-  defaultAddress,
-  defaultSearchDistance,
-  defaultLatitude,
-  defaultLongitude,
-} from '../../mocks/defaultPreferences';
-import { getDistanceFromCoords } from '../../helpers/getDistanceFromCoords';
+import {defaultAddress, defaultSearchDistance, defaultLatitude, defaultLongitude} from '../../mocks/defaultPreferences';
+import {getDistanceFromCoords} from '../../helpers/getDistanceFromCoords';
 
 import './index.css';
 
@@ -26,11 +21,14 @@ const WorkoutsList = () => {
     setIsTutorProfileOpened(!isTutorProfileOpened);
   };
 
-  const distance = (lat1, lon1, lat2, lon2) =>
-    Math.round(getDistanceFromCoords(lat1, lon1, lat2, lon2) * 10) / 10;
-  const sortedWorkoutList = [...workoutsList]
-    .map((w) => ({ ...w, distance: distance(w.latitude, w.longitude, latitude, longitude) }))
-    .sort((a, b) => a.distance > b.distance);
+  const distance = (lat1, lon1, lat2, lon2) => Math.round(getDistanceFromCoords(lat1, lon1, lat2, lon2) * 10) / 10;
+
+  const mappedWorkoutList = workoutsList.map((w) => ({
+    ...w,
+    distance: distance(w.latitude, w.longitude, latitude, longitude),
+  }));
+  // const sortedWorkoutList = [...mappedWorkoutList]
+  //   .sort((a, b) => a.distance > b.distance);
 
   return (
     <>
@@ -58,7 +56,7 @@ const WorkoutsList = () => {
             setSearchString={setSearchString}
           />
           <div className='workout-list-wrapper'>
-            {sortedWorkoutList.map((item) => (
+            {mappedWorkoutList.map((item) => (
               <WorkoutItem
                 key={item.id}
                 {...item}

@@ -25,7 +25,7 @@ const workoutsList = [
     tutorDescription: "'A man is not allowed to be an amateur in physical training. It is a shame for a man to grow old without recognizing the beauty and strength of which his body is capable.' - Socrates \n I will teach you how to transform your body and enjoy it!",
     instUrl: 'https://www.instagram.com/tihon_mironovich/?hl=ru',
     address: "vulica Frunze 2",
-    date: 1638189444871,
+    date: 1638538935000,
   },
   {
     id: "2",
@@ -39,7 +39,7 @@ const workoutsList = [
     tutorDescription:'I am a trainer with more than 5 years of experience and will gladly teach you everything that I know myself!',
     instUrl: 'https://www.instagram.com/p/CSPg1gsIEJU/',
     address: "Prospekte Pobeditelei 8",
-    date: 1638189444871,
+    date: 1638228935000,
   },
   {
     id: "3",
@@ -53,7 +53,7 @@ const workoutsList = [
     tutorDescription: "November!!! It's time for cold iron and burning muscles !!! I am recruiting a team for outdoor training, if you want to change your body - welcome!",
     instUrl: 'https://www.instagram.com/workout.pavelrom/',
     address: "vulica Azizava 3",
-    date: 1638189444871,
+    date: 1638553935000,
   },
   {
     id: "4",
@@ -65,7 +65,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "Prospekte Pobeditelei 30",
-    date: 1638189444871,
+    date: 1638638935000,
   },
   {
     id: "5",
@@ -77,7 +77,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "Kamsamolskaje Voziera Beach",
-    date: 1638189444871,
+    date: 1638229444871,
   },
   {
     id: "6",
@@ -89,7 +89,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "Prospekte Pobeditelei 20/3",
-    date: 1638189444871,
+    date: 1638259444871,
   },
   {
     id: "7",
@@ -101,7 +101,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "vulica Hastely 7",
-    date: 1638189444871,
+    date: 1638289444871,
   },
   {
     id: "8",
@@ -113,7 +113,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "Ulitsa Lesi Ukrainki 2",
-    date: 1638189444871,
+    date: 1638679444871,
   },
   {
     id: "9",
@@ -125,7 +125,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "Vulitsa Ihnatsenki 17",
-    date: 1638189444871,
+    date: 1638909444871,
   },
   {
     id: "10",
@@ -137,7 +137,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "vulica Čechava 8",
-    date: 1638189444871,
+    date: 1638215544871,
   },
   {
     id: "11",
@@ -149,7 +149,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "vulica Volacha 15",
-    date: 1638189444871,
+    date: 1638199444871,
   },
   {
     id: "12",
@@ -161,7 +161,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "vulica Kirava 8",
-    date: 1638189444871,
+    date: 1638222444871,
   },
   {
     id: "13",
@@ -173,7 +173,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "Prospekte Pobeditelei 4",
-    date: 1638189444871,
+    date: 1638199444871,
   },
   {
     id: "14",
@@ -185,7 +185,7 @@ const workoutsList = [
     description: "some description",
     instUrl: "https://www.instagram.com/jannksyjanxy/",
     address: "square Starostinskaya Sloboda",
-    date: 1638189444871,
+    date: 1638229444871,
   },
 ];
 
