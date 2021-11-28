@@ -15,14 +15,23 @@ const WorkoutsList = () => {
   const [searchDistance, setSearchDistance] = useState(defaultSearchDistance);
   const [searchString, setSearchString] = useState('');
   const [currentCard, setCurrentCard] = useState(null);
-
+  const [isTutorProfileOpened, setIsTutorProfileOpened] = useState(false);
+  const openTutorProfile = () => {
+    setIsTutorProfileOpened(!isTutorProfileOpened);
+  };
   return (
     <>
       {currentCard ? (
         <TrainingCard
           {...currentCard}
+          isTutorProfileOpened={isTutorProfileOpened}
+          openTutorProfile={openTutorProfile}
           goBack={() => {
-            setCurrentCard(null);
+            if (isTutorProfileOpened) {
+              openTutorProfile();
+            } else {
+              setCurrentCard(null);
+            }
           }}
         />
       ) : (

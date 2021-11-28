@@ -1,6 +1,4 @@
 import WorkoutsList from '../WorkoutsList';
-
-import Card from '../TrainingCard';
 import './App.css';
 
 const App = () => {
