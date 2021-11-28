@@ -1,5 +1,17 @@
 const workoutsList = [
   {
+    id: '0',
+    title: 'some workout',
+    tutor: 'Eldar',
+    imgUrl: 'https://static.thenounproject.com/png/118627-200.png',
+    longitude: '27.551857492363993',
+    latitude: '53.89788095247855',
+    description: 'some description',
+    instUrl: 'https://www.instagram.com/jannksyjanxy/',
+    address: 'Pushkina st, Kolotushkina',
+    date: 1638189444871,
+  },
+  {
     id: '1',
     title: 'some workout',
     tutor: 'Eldar',
@@ -9,7 +21,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '2',
@@ -21,7 +33,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '3',
@@ -33,7 +45,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '4',
@@ -45,7 +57,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '5',
@@ -57,7 +69,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '6',
@@ -69,7 +81,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '7',
@@ -81,7 +93,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '8',
@@ -93,7 +105,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '9',
@@ -105,7 +117,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '10',
@@ -117,7 +129,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '11',
@@ -129,7 +141,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '12',
@@ -141,7 +153,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '13',
@@ -153,7 +165,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
   {
     id: '14',
@@ -165,43 +177,7 @@ const workoutsList = [
     description: 'some description',
     instUrl: 'https://www.instagram.com/jannksyjanxy/',
     address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
-  },
-  {
-    id: '15',
-    title: 'some workout',
-    tutor: 'Eldar',
-    imgUrl: 'https://static.thenounproject.com/png/118627-200.png',
-    longitude: '27.551857492363993',
-    latitude: '53.89788095247855',
-    description: 'some description',
-    instUrl: 'https://www.instagram.com/jannksyjanxy/',
-    address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
-  },
-  {
-    id: '16',
-    title: 'some workout',
-    tutor: 'Eldar',
-    imgUrl: 'https://static.thenounproject.com/png/118627-200.png',
-    longitude: '27.551857492363993',
-    latitude: '53.89788095247855',
-    description: 'some description',
-    instUrl: 'https://www.instagram.com/jannksyjanxy/',
-    address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
-  },
-  {
-    id: '17',
-    title: 'some workout',
-    tutor: 'Eldar',
-    imgUrl: 'https://static.thenounproject.com/png/118627-200.png',
-    longitude: '27.551857492363993',
-    latitude: '53.89788095247855',
-    description: 'some description',
-    instUrl: 'https://www.instagram.com/jannksyjanxy/',
-    address: 'Pushkina st, Kolotushkina',
-    date: 1638189444871
+    date: 1638189444871,
   },
 ];
 
