@@ -7,6 +7,8 @@ const WorkoutItem = ({
   title,
   tutor,
   imgUrl,
+  tutorImg,
+  tutorDescription,
   distance,
   description,
   instUrl,
@@ -18,7 +20,7 @@ const WorkoutItem = ({
     <div
       className='workouts-item'
       onClick={() => {
-        setCurrentCard({ id, title, tutor, imgUrl, distance, description, instUrl, address });
+        setCurrentCard({ id, title, tutor, imgUrl, distance, description, tutorImg, tutorDescription, instUrl, address });
       }}
     >
       <img className='workouts-item__main-img' src={imgUrl} alt='img' />
