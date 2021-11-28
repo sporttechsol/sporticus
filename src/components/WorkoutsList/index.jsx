@@ -9,21 +9,31 @@ import './index.css';
 
 const WorkoutsList = () => {
   const [currentCard, setCurrentCard] = useState(null);
-
+  const [isTutorProfileOpened, setIsTutorProfileOpened] = useState(false);
+  const openTutorProfile = () => {
+    setIsTutorProfileOpened(!isTutorProfileOpened);
+  };
   return (
     <>
       {currentCard ? (
         <TrainingCard
           {...currentCard}
+          isTutorProfileOpened={isTutorProfileOpened} 
+          openTutorProfile={openTutorProfile}
           goBack={() => {
-            setCurrentCard(null);
+            if (isTutorProfileOpened) {
+              openTutorProfile();
+
+            } else {
+              setCurrentCard(null);
+            }
           }}
         />
       ) : (
         <div className='workouts-list'>
           <div className='workout-list-wrapper'>
             {workoutsList.map((item) => (
-              <WorkoutItem key={item.id} {...item} setCurrentCard={setCurrentCard} />
+              <WorkoutItem key={item.id} {...item} setCurrentCard={setCurrentCard}/>
             ))}
           </div>
           <DistanceSlider />
