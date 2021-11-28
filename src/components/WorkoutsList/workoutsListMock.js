@@ -15,13 +15,13 @@ const workoutsList = [
   },
   {
     id: "1",
-    title: 'Gym trainings',
+    title: 'Street workout',
     tutor: 'Tikhon',
     imgUrl: 'https://fitseven.ru/wp-content/uploads/2019/10/uprajneniya-dlya-spiny.jpg',
     tutorImg: 'https://sun9-44.userapi.com/impg/D9PkoNaM4raf9ZXGS20EpQh-vxcAzbCkbV5NEg/PIoRIXiWTBE.jpg?size=827x835&quality=96&sign=e95aeb07528ae6bfc2d4b0fa17f7a4df&type=album',
     longitude: "27.5722875537997",
     latitude: "53.903003632975924",
-    description: 'Gym trainings under the supervision of an experienced and certified trainer',
+    description: 'Street workout under the supervision of an experienced and certified trainer',
     tutorDescription: "'A man is not allowed to be an amateur in physical training. It is a shame for a man to grow old without recognizing the beauty and strength of which his body is capable.' - Socrates \n I will teach you how to transform your body and enjoy it!",
     instUrl: 'https://www.instagram.com/tihon_mironovich/?hl=ru',
     address: "vulica Frunze 2",
@@ -29,7 +29,7 @@ const workoutsList = [
   },
   {
     id: "2",
-    title: 'Go-go dances',
+    title: 'Pull-ups only',
     tutor: 'Anna',
     imgUrl: 'http://x-promt.ru/sites/default/files/sites/all/themes/xpromt/images/go-go3.jpg',
     tutorImg:'https://sun9-26.userapi.com/impg/oEhLH-zdkocIFzDdkIy6V9PWnEbQew-jVlgsjw/_e-Xw-I1nf4.jpg?size=831x677&quality=96&sign=c4c47f1031bb7db0e25c78406e61f3bb&type=album',
@@ -57,7 +57,7 @@ const workoutsList = [
   },
   {
     id: "4",
-    title: "Gym trainings",
+    title: "Strength training outdoors",
     tutor: "Alex",
     imgUrl: "https://www.muscleandfitness.com/wp-content/uploads/2019/07/Hands-Clapping-Chaulk-Kettlebell.jpg?quality=86&strip=all",
     longitude: "27.519504646737932",
@@ -141,7 +141,7 @@ const workoutsList = [
   },
   {
     id: "11",
-    title: "Box trainings",
+    title: "Running workouts",
     tutor: "Sergey",
     imgUrl: "https://www.worldclass.ru/world_class_life/worldclass-lifestyle/detail/boxing.png",
     longitude: "27.517956728365483",
