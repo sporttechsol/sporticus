@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import Slider, {Range} from 'rc-slider';
+import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
 import './index.css';
@@ -40,8 +40,10 @@ const Header = ({address, setAddress, searchDistance, setSearchDistance, searchS
               onChange={(value) => {
                 setSearchDistance(value);
               }}
+              min={0}
+              max={10}
             />
-            <div className='header__slider-value'>{searchDistance}</div>
+            <div className='header__slider-value'>{searchDistance}km</div>
           </div>
         </>
       ) : (
