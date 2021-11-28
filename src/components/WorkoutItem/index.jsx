@@ -1,5 +1,4 @@
 import {getDistanceFromCoords} from '../../helpers/getDistanceFromCoords';
-import {currentLatitude, currentLongitude} from '../../mocks/currentCoordinates';
 
 import './index.css';
 
@@ -14,8 +13,10 @@ const WorkoutItem = ({
   instUrl,
   address,
   setCurrentCard,
+  userLatitude,
+  userLongitude,
 }) => {
-  const distance = Math.round(getDistanceFromCoords(currentLatitude, currentLongitude, latitude, longitude));
+  const distance = Math.round(getDistanceFromCoords(userLatitude, userLongitude, latitude, longitude) * 10) / 10;
 
   return (
     <div

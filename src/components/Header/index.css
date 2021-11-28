@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  width: 100%;
+  padding: 10px 70px 10px 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  background: #fff;
+  transition: height 0.175s;
+}
+
+.header__input-container {
+  margin-top: 10px;
+}
+
+.header__input:first-child {
+  margin-top: 0;
+}
+
+.header-open {
+  height: 150px;
+}
+
+.header__toggle-button {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 37px;
+  height: 37px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.header__toggle-button-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.header-open .header__toggle-button-icon {
+  transform: rotate(-90deg);
+}
+
+.header__slider-container {
+  display: flex;
+  padding-left: 5px;
+}
+
+.header__slider-input {
+  width: 100px;
+}
+
+.header__slider-value {
+  padding-left: 20px;
+}
