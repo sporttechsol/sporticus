@@ -83,7 +83,7 @@ const Card = ({
             <p>Already assigned: {assignedNumber}</p>
           </div>
           <div className='info_container'>
-            <p>{description}</p>
+            {description ?? (<p>{description}</p>)}
           </div>
           <div className='card_reaction'>
             {isAssigned ? (
