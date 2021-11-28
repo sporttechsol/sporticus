@@ -25,11 +25,15 @@ const WorkoutsList = () => {
     distance: distance(w.latitude, w.longitude, latitude, longitude),
   })).sort((a, b) => a.distance > b.distance);
 
-  const [workoutList, setWorkoutList] = useState(enrichWorkouts(WORKOUTS_LIST));
+  const originalWorkoutList = enrichWorkouts(WORKOUTS_LIST);
+  const [workoutList, setWorkoutList] = useState(originalWorkoutList);
 
   useEffect(() => {
-    setWorkoutList(workoutList.filter((w) => w.distance < searchDistance));
-  }, [workoutList, searchDistance])
+    const query = searchString.toLowerCase();
+    setWorkoutList(originalWorkoutList
+      .filter((w) => w.distance < searchDistance)
+      .filter((w) => searchString?.length ? w.title.toLowerCase().includes(query) : true));
+  }, [searchDistance, searchString])
 
   return (
     <>
