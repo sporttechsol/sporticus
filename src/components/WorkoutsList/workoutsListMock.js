@@ -1,4 +1,4 @@
-const workoutsList = [
+const WORKOUTS_LIST = [
   {
     id: "0",
     title: "Fat burning workout",
@@ -189,4 +189,4 @@ const workoutsList = [
   },
 ];
 
-export default workoutsList;
+export default WORKOUTS_LIST;
