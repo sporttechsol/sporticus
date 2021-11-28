@@ -1,6 +1,6 @@
-import { DEFAULT_COACH, DEFAULT_WORKOUT } from "../types";
-import { TABLE_DECISIONS, supabase, TABLE_USERS, TABLE_WORKOUTS } from "../utils/supabase";
-import { NO_OP } from "../utils/utils";
+import { TABLE_DECISIONS, supabase, TABLE_USERS, TABLE_WORKOUTS } from "../helpers/supabase";
+import { NO_OP } from "../helpers/utils";
+import { DEFAULT_COACH, DEFAULT_WORKOUT } from "./useUser";
 
 export const useWorkouts = ({ refreshData } = { refreshData: NO_OP }) => {
   const addUser = async (userToAdd) => {

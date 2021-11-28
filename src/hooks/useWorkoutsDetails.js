@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { supabase, TABLE_DECISIONS } from "../utils/supabase";
-import { NO_OP } from "../utils/utils";
+import { supabase, TABLE_DECISIONS } from "../helpers/supabase";
+import { NO_OP } from "../helpers/utils";
 import { useUser } from "./useUser";
 import { useWorkouts } from "./useWorkouts";
 
